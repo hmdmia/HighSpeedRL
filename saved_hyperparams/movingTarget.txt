@@ -1,0 +1,1 @@
+{'batch_size': 551, 'step_multiplier': 4, 'gamma': 0.9422054269455927, 'lr': 0.00034564157093207857, 'arch_size': 684, 'ent_coef': 0.0005444016386515058, 'clip_range': 0.15305879003071712, 'n_epochs': 28, 'gae_lambda': 0.806805518540469, 'max_grad_norm': 3.2778390352400186, 'vf_coef': 0.38717925092047145, 'ortho_init': True, 'activation_fn': 'relu'}

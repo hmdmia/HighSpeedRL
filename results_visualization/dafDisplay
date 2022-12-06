@@ -1,0 +1,11 @@
+#!/bin/sh
+# test
+
+# Ensure current dir on python path
+export PYTHONPATH=${PYTHONPATH:+${PYTHONPATH}:}$PWD/
+
+# Start matlab in background ("...run($(cat port),true)" for debug)
+matlab -r "addpath('../daf'); daf_sim.DafServer.run($(cat port))" &
+
+# Run (add "-d" for debug)
+python results_visualization/dafMatlabDisplay.py

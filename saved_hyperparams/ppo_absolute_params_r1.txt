@@ -1,0 +1,1 @@
+{'batch_size': 512, 'n_steps': 2048, 'gamma': 0.9999, 'lr': 8.607059086568699e-05, 'ent_coef': 0.00541185650022739, 'clip_range': 0.1, 'n_epochs': 5, 'gae_lambda': 0.99, 'max_grad_norm': 0.3, 'vf_coef': 0.5565400214366856, 'net_arch': 'medium', 'activation_fn': 'tanh'}

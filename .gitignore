@@ -1,0 +1,12 @@
+.idea/
+__pycache__/
+*.beluga
+*.npy
+*.npz
+rl_runners/*/*.zip
+*.pkl
+*.csv
+
+tmp/
+.vscode/
+*.asv

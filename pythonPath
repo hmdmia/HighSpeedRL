@@ -1,0 +1,5 @@
+#!/bin/sh
+# test
+
+# Ensure current dir on python path
+export PYTHONPATH=${PYTHONPATH:+${PYTHONPATH}:}$PWD/

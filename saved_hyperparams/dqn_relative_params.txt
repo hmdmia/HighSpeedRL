@@ -1,0 +1,1 @@
+{'gamma': 0.9, 'lr': 3.093777730863579e-05, 'batch_size': 100, 'buffer_size': 10000, 'exploration_final_eps': 0.020392720478484477, 'exploration_fraction': 0.2930185615936789, 'target_update_interval': 1, 'learning_starts': 5000, 'train_freq': 4, 'subsample_steps': 2, 'net_arch': 'small', 'activation_fn': 'relu'}

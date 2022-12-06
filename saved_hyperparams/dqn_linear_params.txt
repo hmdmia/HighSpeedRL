@@ -1,0 +1,1 @@
+{'gamma': 0.98, 'lr': 0.00018275558634465753, 'batch_size': 256, 'buffer_size': 50000, 'exploration_final_eps': 0.1474175563911608, 'exploration_fraction': 0.06557738291890275, 'target_update_interval': 5000, 'learning_starts': 0, 'train_freq': 1, 'subsample_steps': 1, 'net_arch': 'medium', 'activation_fn': 'tanh'}

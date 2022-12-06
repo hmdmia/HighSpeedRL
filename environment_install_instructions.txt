@@ -1,0 +1,58 @@
+# Winston's instructions using Anaconda
+1. Set up virtual environment
+>> conda create --name <environment name> --no-default-packages
+
+2. Activate virtual environment
+>> conda activate <environment name>
+
+3. Install packages
+>> conda install pip
+>> pip install stable-baselines3[extra]
+>> pip install optuna
+
+4. Edit pycharm interpreter to use this new virtual environment
+https://www.jetbrains.com/help/pycharm/creating-virtual-environment.html#python_create_virtual_env
+
+# Sean's instructions using Anaconda
+1. Set Up Virtual Enviornment
+>> conda create -n yourenvironment python=3.8 anaconda
+
+2. Activate Virtual Environment
+>> conda activate yourenvironment
+
+3. Install Packages
+ 3.1 Stable-baselines 3 - https://github.com/DLR-RM/stable-baselines3
+     >> git clone https://github.com/DLR-RM/stable-baselines3.git
+     >> pip install -e stable-baselines3[extra] --use-feature=2020-resolver
+ 3.2 Install Optuna
+     >> conda install -c conda-forge optuna
+ 3.3 Downgrade PyTorch
+     >> conda install -c conda-forge PyTorch==1.7.1
+4. Edit pycharm interpreter to use this new virtual environment
+https://www.jetbrains.com/help/pycharm/creating-virtual-environment.html#python_create_virtual_env
+
+
+# Using pip venv
+1. Navigate to folder where you want virtual environment <venv_folder> and make virtual environment with name <venv_name>
+>> cd <venv_folder>
+>> python3 -m <venv_name>
+
+2. Activate <venv_name>
+>> source sb3/bin/activate
+
+3. Upgrade pip
+>> pip install --upgrade pip
+
+4. Clone Stable-Baselines3 (in location of your choice) and install
+>> cd <sb3_location>
+>> git clone https://github.com/DLR-RM/stable-baselines3.git
+>> pip install -e stable-baselines3[extra]
+
+5. Install Optuna
+>> pip install optuna
+
+6. Downgrade PyTorch
+>> pip install torch=cd =1.7.1
+
+7. Select virtual environment in PyCharm
+https://www.jetbrains.com/help/pycharm/creating-virtual-environment.html#python_create_virtual_env

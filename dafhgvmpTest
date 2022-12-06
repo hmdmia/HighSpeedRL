@@ -1,0 +1,11 @@
+#!/bin/sh
+# test
+
+# Ensure current dir on python path
+export PYTHONPATH=${PYTHONPATH:+${PYTHONPATH}:}$PWD/
+
+# Start matlab in background ("...run(50000,true)" for debug)
+matlab -nodisplay -nosplash -r "addpath('../daf'); daf_sim.DafServer.run($(cat port));" &
+
+# Run (add "-d" for debug)
+python rl_runners/dafHGVmpTest.py

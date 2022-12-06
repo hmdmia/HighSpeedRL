@@ -1,0 +1,13 @@
+# test
+
+# Ensure current dir on python path
+export PYTHONPATH=${PYTHONPATH:+${PYTHONPATH}:}$PWD/
+
+# Start matlab in background
+matlab -nodisplay -nosplash -r "addpath('../daf'); daf_sim.DafServer.run(50000)" &
+
+# Give MATLAB time to start up
+sleep 3
+
+# Run
+python rl_runners/daf_test_start.py
